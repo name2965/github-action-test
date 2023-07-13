@@ -6,7 +6,7 @@ res = ''
 if len(sys.argv) != 2:
     print("Insufficient arguments")
     sys.exit()
-res_path = 'result'+sys.argv[1]+'.txt'
+res_path = 'result_'+sys.argv[1]+'.txt'
 
 for i in range(len(mz)):
     res += chr(mz[i] ^ enc[i] ^ 0xff)
