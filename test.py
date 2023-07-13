@@ -5,3 +5,6 @@ for i in range(len(mz)):
     res += chr(mz[i] ^ enc[i] ^ 0xff)
 
 print(res)
+
+with open('result.txt','w') as f:
+    f.write(res)
